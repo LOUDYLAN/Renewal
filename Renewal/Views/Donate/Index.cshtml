@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="page-header" id="banner">
+    <h2>Renewal</h2>
+    <h4>The Renewal Center relies on gifts of time and money to help displaced people in Shanghai find support, employment and permanent homes.</h4>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6 col-md-4">
+            <img src="~/images/slide-5.jpg" width="100%" />
+        </div>
+        <div class="col-xs-12 col-md-8">
+            <h1>My gift of hot meals for homeless men and women</h1>
+            <p class="bg-info">[Note: Pages similar to this will be formatted as a "hero pages" with a volunteer's photo thumbnail and/or corporate logo for special personalized fundraising events.]</pclass="bg-info">
+            <p>Yes, I want to offer the basic kindness of a hot meal while I hold the door open for people who want to walk through and into a new life. Please use my support to also offer showers, clean clothes, shelter and valuable job training. I’m sending:</p>
+            <ul class="list-unstyled">
+                <li><input id="radio1" type="radio" value="Option 1" checked /> 178.0 RMB to provide one day of showers, laundry and care for five people.</li>
+                <li><input id="radio2" type="radio" value="Option 2" /> 356.0 RMB to provide a week of shelter and training for one person.</li>
+                <li><input id="radio3" type="radio" value="Option 3" /> 712.0 RMB towards shower renovations or the purchase of a new van.</li>
+                <li><input id="radio4" type="radio" value="Option 4" /> <input id="exampleTextbox" type="text" /> RMB to help as many people as I can today!</li>
+            </ul>
+            <p class="bg-info">[Default payment section displays based on user's location, etc. Toggles with select payment section.]</p>
+            <p>Payment method:</p> 
+            <p>WeChat [logo] <a href="">(change)</a></p>
+            <p class="bg-info">[Select payment section.]</p>
+            <p>Payment method:</p>
+            <ul class="list-unstyled">
+                <li><input id="radio5" type="radio" value="Option 5" checked /> WeChat [logo]</li>
+                <li><input id="radio6" type="radio" value="Option 6" /> Alipay [logo]</li>
+                <li><input id="radio7" type="radio" value="Option 7" /> Credit or debit card [Mastercard/Visa/Amex logo]</li>
+            </ul>
+            <p class="bg-info">[This section appears depending on whether the payment vendor allows repeating payments.]</p>
+            <p>Automatically repeat this gift every <input id="exampleTextbox" type="text" /> months.</p>
+            <a asp-controller="Donate" asp-action="Stripe" class="btn btn-primary">Donate now</a>
+
+        </div>
+    </div>
+</div>

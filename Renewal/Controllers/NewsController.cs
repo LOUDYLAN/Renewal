@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -6,29 +6,19 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Renewal.Controllers
 {
-    public class HomeController : Controller
+    public class NewsController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Services()
+        public IActionResult Campaign()
         {
             return View();
         }
 
-        public IActionResult Program()
-        {
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            return View();
-        }
-
-        public IActionResult Error()
+        public IActionResult Letter()
         {
             return View();
         }
